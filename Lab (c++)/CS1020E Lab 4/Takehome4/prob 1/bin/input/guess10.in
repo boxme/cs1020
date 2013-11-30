@@ -1,0 +1,224 @@
+1
+reverse
+9
+push 17
+push 10
+push 11
+reverse
+pop 10
+push 20
+push 10
+pop 12
+reverse
+16
+push 15
+reverse
+pop 15
+reverse
+push 1
+pop 1
+reverse
+reverse
+reverse
+push 12
+reverse
+push 9
+pop 9
+push 19
+pop 19
+push 7
+4
+push 7
+push 9
+push 4
+push 18
+4
+reverse
+push 8
+reverse
+pop 5
+9
+push 20
+push 8
+push 14
+push 18
+reverse
+reverse
+reverse
+push 17
+push 17
+16
+reverse
+reverse
+reverse
+push 11
+push 14
+reverse
+push 9
+push 14
+reverse
+reverse
+pop 14
+push 14
+push 4
+pop 11
+reverse
+pop 4
+17
+push 14
+reverse
+pop 14
+push 4
+pop 4
+reverse
+reverse
+push 16
+pop 16
+reverse
+push 6
+reverse
+push 19
+reverse
+push 5
+push 10
+pop 10
+16
+push 19
+pop 19
+push 1
+reverse
+push 6
+push 5
+reverse
+reverse
+reverse
+reverse
+pop 5
+pop 6
+pop 1
+reverse
+reverse
+reverse
+8
+reverse
+push 20
+push 14
+pop 20
+push 6
+reverse
+push 17
+push 2
+5
+push 12
+reverse
+reverse
+push 15
+push 16
+5
+push 5
+push 9
+push 12
+reverse
+push 6
+20
+reverse
+push 20
+reverse
+push 8
+pop 20
+push 9
+pop 8
+reverse
+push 12
+reverse
+push 20
+pop 12
+reverse
+reverse
+push 8
+push 19
+pop 9
+push 7
+push 13
+reverse
+9
+push 17
+push 13
+pop 17
+push 5
+reverse
+reverse
+pop 13
+push 6
+reverse
+2
+push 13
+reverse
+10
+push 20
+push 13
+reverse
+push 9
+reverse
+reverse
+reverse
+push 8
+reverse
+push 16
+17
+reverse
+reverse
+pop 12
+reverse
+reverse
+pop 10
+push 19
+reverse
+pop 9
+pop 1
+reverse
+pop 5
+push 14
+push 12
+push 11
+pop 14
+pop 1
+18
+push 2
+reverse
+pop 2
+push 10
+push 4
+reverse
+reverse
+push 17
+push 17
+push 17
+reverse
+reverse
+push 14
+push 18
+push 4
+reverse
+reverse
+push 16
+14
+push 2
+push 12
+reverse
+pop 12
+push 14
+push 7
+pop 2
+reverse
+reverse
+pop 14
+push 9
+push 2
+pop 7
+reverse
+4
+push 15
+reverse
+push 13
+pop 17

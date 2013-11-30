@@ -1,0 +1,64 @@
+<html>
+<head></head>
+<body>
+<h1>Find Substring</h1>
+
+<h2>Problem Description</h2>
+<p>Given 2 strings, determine whether a particular substring is inside those strings:
+<ul>
+	<li>Output 0 if the substring does not belong to both strings.</li>
+	<li>Output 1 if the substring is in first string but not second string.</li>
+	<li>Output 2 if the substring is in second string but not first string.</li>
+	<li>Output 3 if the substring is in both strings.</li></p></ul>
+
+<h2>Input</h2>
+<p>The first line of the input contains N (1 <= N <= 500) and K (1 <= K <= 6), where N is the length of those strings and K is the length of the substring that we are interested in. The second line contains the first string of length N. The third line contains the second string of length N. The next line contains an integer Q (1 <= Q <= 1,000), denoting the number of substrings that we are interested in. The next Q lines contain the substrings of length K.</p>
+
+<h2>Output</h2>
+<p>There are Q lines in the output. Each line contains the number of occurrences of the substrings.
+
+<h2>Sample Input</h2>
+<pre>6 2
+ACGTAC
+ACTGCA
+6
+AC
+CG
+AT
+GC
+TA
+CA  	             
+</pre>
+
+<h2>Sample Output</h2>
+<pre>3
+1
+0
+2
+1
+2</pre>
+
+<h2>Explanation</h2>
+<pre>
+Find AC: <u>AC</u>GT<u>AC</u>              <u>AC</u>TGCA.
+Find CG: A<u>CG</u>TAC              ACTGCA.
+Find AT: ACGTAC              ACTGCA.
+Find GC: ACGTAC              ACT<u>GC</u>A.
+Find TA: ACG<u>TA</u>C              ACTGCA.
+Find CA: ACGTAC              ACTG<u>CA</u>.
+</pre>
+
+<h2>Marking</h2>
+<ol>
+<li>You will only gain a maximum of 70% for this section if you solution is worse than big-Oh of O(N*K + Q*K).</li>
+<li>You can gain a maximum of 100% for this section if a O(N*K + Q*K) or better solution is implemented correctly. You must answer each query in O(K) time.</li></ol>
+
+<h2>Hint</h2>
+<ol>
+<li>To get 100% solution, think of a data structure that you have learnt that can search/query a particular key in O(1). Also note that the valid characters are only 'A', 'G', 'C', and 'T'.</li>
+<li>K is at most 6.</li></ol>
+
+<h2>Note</h2>
+The main Java class must be called Find, and be in the source file Find.java.
+</body>
+</html>

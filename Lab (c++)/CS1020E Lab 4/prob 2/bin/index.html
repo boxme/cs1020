@@ -1,0 +1,99 @@
+<html>
+<head></head>
+<body>
+<h1>Swinging Monkey</h1>
+<h2>Objective</h2>
+<p>The objective of this problem is to test the students' understanding on Stack.</p>
+
+<h2>Problem Description</h2>
+<p>Monkeys like to swing from tree to tree. They can swing from one tree to 
+another directly as long as there is no tree in between that is taller  
+than or have the same height as either one of the two trees. For example, 
+if there are 5 trees with heights 19m, 17m, 20m, 20m and 20m lining up 
+in that order, then the monkey will be able to swing from one tree to 
+the other as shown below:<br>
+1. from first tree to second tree<br>
+2. from first tree to third tree<br>
+3. from second tree to third tree<br>
+4. from third tree to fourth tree<br>
+5. from fourth tree to fifth tree<br>
+
+<p>Tarzan, the king of jungle who is able to communicate with the monkeys, 
+wants to test the monkeys to see if they know how to count the total number 
+of pairs of trees that they can swing directly from one to the other. But 
+he himself is not very good in counting. So he turns to you, the best Java
+programmer in the country, to write a program for getting the correct
+count for the trees in different parts of the jungle.
+
+<h2>Input</h2>
+<p>The first line contains <b>N</b>, the number of trees in the path.
+The next line contains <b>N</b> integers <br>
+a<sub>1</sub> a<sub>2</sub> a<sub>3</sub> ... a<sub>n</sub> <br>
+where a<sub>i</sub> represents the height of the ith tree in the path. <br>
+0 < a<sub>i</sub> <= 2^31 <br>
+2 <= <b>N</b> <= 500,000
+
+<h2>Output</h2>
+<p>The total number of pairs of trees which the monkeys can swing directly
+from one to the other with the given list of tree heights.
+
+<h2>Sample Input 1</h2>
+<pre>4
+3 4 1 2</pre>
+
+<h2>Sample Output 1</h2>
+<pre>4</pre>
+
+<h2>Sample Input 2</h2>
+<pre>5
+19 17 20 20 20</pre>
+
+<h2>Sample Output 2</h2>
+<pre>5</pre>
+
+<h2>Sample Input 3</h2>
+<pre>4
+12 21 21 12</pre>
+
+<h2>Sample Output 3</h2>
+<pre>3</pre>
+
+<h2>Sample Explanation</h2>
+<pre>
+Sample 1:
+<ul><li>(3, 4): from 1<sup>st</sup> tree, it can only swing to the 2nd tree directly
+           but not all the other tree as the 2<sup>nd</sup> tree blocks it.</li>
+	<li>(4, 1) and (4, 2): from the 2<sup>nd</sup> tree, it can swing directly to the
+           3<sup>rd</sup> and 4<sup>th</sup> tree directly.</li>
+	<li>(1, 2): It can swing from the 3<sup>rd</sup> tree to the 4th tree.</li></ul>
+
+
+Sample 2: 
+<ul><li>(19, 17) and (19, 20): from 1<sup>st</sup> tree, it can swing directly to 2<sup>nd</sup>
+          and 3<sup>rd</sup> tree but not the rest.</li>
+	<li>(17, 20): from the 2<sup>nd</sup> tree, it can only swing to the 3<sup>rd</sup> tree but
+          not the rest.</li>
+	<li>(20, 20): from the 3<sup>rd</sup> tree, it can only swing to the 4<sup>th</sup> tree but
+          not the 5<sup>th</sup>.</li>
+	<li>(20, 20): from the 4<sup>th</sup> tree, it can swing to the 5<sup>th</sup> tree.</li></ul>
+
+Sample 3:
+<ul><li>(12, 21): from 1<sup>st</sup> tree, it can only swing to the 2<sup>nd</sup> tree but not
+             the rest.</li>
+	<li>(21, 21): from the 2<sup>nd</sup> tree, it can swing to the 3<sup>rd</sup> tree but not
+             the 4<sup>th</sup>.</li>
+	<li>(21, 12): obvious</li></ul>
+</pre>
+
+<h2>Note</h2>
+<ul>
+<li>The results should be in long long range.</li>
+<li>An efficient program is required. You may try some given testcases to see 
+  if your program is fast enough.</li>
+<li>For example, if you check all the pairs to see if there is any tree
+  in between them that will block the swing, it might be too slow to 
+  pass some of the test cases.</li>
+<li>You can improve the efficiency by using a stack.</li>
+</ul>
+</body>
+</html>

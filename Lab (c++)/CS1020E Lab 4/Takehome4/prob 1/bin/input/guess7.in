@@ -1,0 +1,73 @@
+3
+push 13
+reverse
+reverse
+14
+push 13
+push 8
+push 1
+reverse
+reverse
+pop 1
+reverse
+pop 13
+push 5
+pop 5
+push 3
+push 2
+push 12
+pop 12
+11
+push 12
+reverse
+pop 12
+push 9
+push 1
+pop 9
+push 4
+reverse
+reverse
+push 3
+reverse
+7
+reverse
+pop 7
+reverse
+reverse
+reverse
+pop 19
+reverse
+1
+push 6
+6
+reverse
+pop 20
+reverse
+pop 13
+push 1
+reverse
+4
+push 19
+reverse
+pop 19
+reverse
+19
+reverse
+reverse
+reverse
+reverse
+push 17
+pop 17
+push 5
+reverse
+pop 5
+reverse
+reverse
+push 15
+reverse
+push 19
+push 12
+reverse
+reverse
+push 8
+pop 8

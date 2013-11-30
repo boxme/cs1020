@@ -1,0 +1,44 @@
+<html>
+<head></head>
+<body>
+<h1>Bank</h1>
+
+<h2>Problem Description</h2>
+<p>SuperBank is opening a new branch in Singapore. They are giving high interest rate to attract more people to deposit in SuperBank.
+
+<p>Bob the Banker asks your help to create a program for managing customer’s bank accounts. A bank customer can do the following operations:
+<ol>
+<li>Create a new bank account with an initial balance.</li>
+<li>Deposit money to his/her account.</li>
+<li>Withdraw money from his/her account.</li>
+</ol>
+
+<p>The bank is giving an interest rate of <i>x</i>% per annum, and it is calculated on monthly basis as follows:
+<div align="center"><p>interest = initial deposit &times; (<i>x</i>/12) &times; number of months elapsed</div>
+
+<h2>Input</h2>
+<p>The first line contains a real number <i>x</i>, the interest rate (in %) per annum and an integer <i>p</i>, the period in months. It is followed by a sequence of operations (one operation each line), and terminated by “0”. The query format will be “Create <i>name x</i>”, “Deposit <i>name x</i>”, or “Withdraw <i>name x</i>”, where <i>name</i> is the name of the customer and <i>x</i> is the amount of money. There will be at most 100 bank accounts and they are all created on the first month when the bank is opening.
+
+<h2>Output</h2>
+<p>Print a single line containing the number of accounts registered in the bank, followed by the names of all account holders, and their final balance after <i>p</i> months (same order as the input). The final balance should be rounded to two decimal places.
+
+<h2>Sample Input</h2>
+<pre>13 12
+Create Billy 2500
+Create Charlie 1000
+Create John 100.50
+Withdraw Charlie 500
+Deposit John 899.50
+0
+</pre>
+
+<h2>Sample Output</h2>
+<pre>3
+Billy 2825.00
+Charlie 630.00
+John 1013.07
+</pre>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+import java.util.*;
+
+class Magic
+{
+  public static void main(String[] args)
+  {
+    int[][] square = new int[19][19];
+    
+    Scanner sc = new Scanner(System.in);
+    
+    int N = sc.nextInt();
+    
+    int i = 1; //Counter
+    int row, col;
+    
+    //Coordinates for starting number//
+    row = 0; 
+    col = (N-1)/2;
+    
+    do
+    {
+      if (row<0 && col>(N-1))
+      {
+        row +=2;
+        --col;
+      }
+      else if(row<0)
+      {
+        row = (N-1);
+      }
+      else if(col>(N-1))
+      {
+        col = 0;
+      }
+      
+      if(square[row][col] != 0)
+      {
+        row +=2;
+        --col;
+      }
+     
+      else
+      {
+        square[row][col] = i;
+        ++i;
+        --row;
+        ++col;
+      }
+    }
+    while (i <= N*N);
+    
+    for (row = 0 ; row < N ; ++row)
+    {
+      for (col = 0 ; col < N ; ++col)
+      {
+        System.out.printf("%d", square[row][col]);
+        if (col < N-1)
+          System.out.printf(" ");
+      }
+      System.out.println();
+    }
+  }
+}
+
+  
+
+         

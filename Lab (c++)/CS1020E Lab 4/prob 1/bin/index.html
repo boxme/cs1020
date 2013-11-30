@@ -1,0 +1,71 @@
+<html>
+<head></head>
+<body>
+<h1>Stack or Queue ?</h1>
+
+<h2>Problem Description</h2>
+<p>Professor X gives you a mysterious data structure containing integers. The data structure supports the following operations:
+<ul><li><code>push</code>: Insert an element into the data structure.</li>
+<li><code>pop</code>: Take out an element from the data structure.</li>
+<li><code>reverse</code>: Reverse the elements inside.</li></ul>
+
+<p>Given the list of operations and their return values, Professor X asks you to guess the data structure. He also gives you a hint: it could be a stack or a queue only.
+
+<h2>Input</h2>
+<p>There will be several test cases in this problem. Each test case contains <b>N</b> (1 <= <b>N</b> <= 20), the number of operations. The next <b>N</b> lines are the list of operations and their return values.
+<ul><li><code>push M</code>: 	Push the integer M into the data structure.</li>
+<li><code>pop M</code>: 	Pop an element from the data structure and you get the integer M.</li>
+<li><code>reverse</code>: Reverse the elements inside the data structure.</li></ul>
+
+<p>The input will be terminated by EOF.
+
+<h2>Output</h2>
+<p>For each test case, output one of the followings in a single line:
+<ul><li><code>stack</code>: It is definitely a stack.</li>
+<li><code>queue</code>: It is definitely a queue.</li>
+<li><code>stack or queue</code>: It can be both stack or queue.</li>
+<li><code>impossible</code>: Professor X wants to trick you, it cannot be both!</li></ul>
+
+<h2>Sample Input</h2>
+<pre>4
+push 1
+push 2
+pop 2
+pop 1
+5
+push 1
+push 2
+reverse
+pop 2
+pop 1
+2
+push 1
+pop 1
+2
+push 1
+pop 2
+</pre>
+
+<h2>Sample Output</h2>
+<pre>stack
+queue
+stack or queue
+impossible
+</pre>
+
+<h2>Explanation</h2>
+<p>For Test Case #1, every time you pop an element the last element inserted will be returned (Last-In First-Out), hence it is a stack.
+
+<p>For Test Case #2, every time you pop an element you get the oldest element (First-In First-Out), so it is a queue. Also notice that the order of the elements in the data structure is reversed in this case.
+
+<p>In Test Case #3, only 1 element is inserted into the data structure. Hence it is ambiguous; stack and queue are possible in this case.
+
+<p>For the last test case, the integer 1 is inserted, but when you try to remove an element it returns the integer 2. Clearly this is not possible.
+
+
+<h2>Note</h2>
+<ul><li>You may use C++ STL Stack and Queue in your solution.</li>
+</ul>
+
+</body>
+</html>

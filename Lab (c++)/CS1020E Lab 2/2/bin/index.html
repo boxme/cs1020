@@ -1,0 +1,66 @@
+<html>
+<head></head>
+<body>
+<h1>Buildings</h1>
+
+<h2>Problem Description</h2>
+<p>In this problem, you will build a simple search engine for buildings. You need to create 3 classes: </p>
+
+<img src="buildings.gif">
+
+<p>The engine will support the following operations:
+
+<ol><li><b>add &#60;building name&#62; &#60;location&#62; &#60;opening date&#62;</b></li>
+	<ul><li>This operation will add a new building to the database.</li>
+		<li>There will be no space in the building names.</li>
+		<li>The opening date will have the format <b>&#60;day&#62; &#60;month&#62; &#60;year&#62;</b>, e.g. &ldquo;16 February 2012&rdquo;. You will create a new Date object to store the opening date.</li>
+		<li>If a building with the same name has not been added, print &ldquo;<b>Added</b>&rdquo;.</li>
+		<li>Otherwise, print &ldquo;<b>Duplicated</b>&rdquo; and do not add the building to the database.</li></ul>
+	<li><b>search &#60;keyword&#62;</b></li>
+	<ul><li>This operation will look for buildings whose name <u>contains</u> the specified keyword and it will be <b><u>case insensitive</b></u>. The keyword will be exactly one word.</li>
+		<li>Output the names of the buildings, separated by a comma and a single space. (same order as input, <b><u>case sensitive</u></b>). You can assume that there is always at least one match.</li></ul>
+	<li><b>oldest</b> and <b>newest</b></li>
+	<ul><li>Output the name of oldest and newest buildings, and their locations. It is guaranteed that the oldest and the newest building will be unique.</li></ul>
+</ol>
+
+<h2>Input</h2>
+The first line contains an integer <b>Q</b> (1 <= <b>Q</b> <= 100), the number of queries. The next <b>Q</b> lines are the operations.
+
+<h2>Output</h2>
+There are <b>Q</b> lines in the output. You must output the answer for every query according to the rules specified above.
+
+<h2>Sample Input</h2>
+<pre>8
+add Eiffel France 31 March 1889
+add PetronasTowers Malaysia 1 January 1998
+oldest
+add PisaTower Italy 9 August 1173
+oldest
+add PisaTower Italy 9 August 1173
+search Tower
+newest
+</pre>
+
+<h2>Sample Output</h2>
+<pre>Added
+Added
+Eiffel in France
+Added
+PisaTower in Italy
+Duplicated
+PetronasTowers, PisaTower
+PetronasTowers in Malaysia
+</pre>
+
+<h2>Note</h2>
+<ul><li>You are required to submit the following files:</li>
+	<pre>SearchEngine.h		Date.h
+SearchEngine.cpp	Date.cpp
+Building.h
+Building.cpp</pre>
+	<li>Please use OOP design in your solution. Put your main function inside the source file <code>SearchEngine.cpp</code>.</li>
+	<li>Months in Gregorian calendar are: <code>January, February, March, April, May, June, July, August, September, October, November, December</code>.</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+6
+push 1
+pop 1
+push 2
+pop 2
+push 3
+pop 3
+5
+push 1
+push 2
+push 3
+push 4
+push 5
+4
+push 1
+pop 2
+push 3
+pop 4

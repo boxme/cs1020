@@ -1,0 +1,249 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-SG>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Pseudo-RMQ</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Description</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Many,
+many years ago</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Acer
+didn’t know RMQ</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Poor
+and unlucky he was in trouble –</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>How
+to find minimum in an interval?</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Verged
+by a despairing sank</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Yet
+was hint to use a stack </span><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:Wingdings'>J</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Okay,
+it is now clear what Acer’s trouble is: finding the minimal number in a given
+interval. Poor and unlucky Acer now needs your help.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>You
+are given a sequence of N integers, denoted as a[1], a[2], a[3],…,a[N]. And you
+will then be queried frequently about the minimum number in the closed interval
+[c, d], more explicitly, min{a[i] | c&lt;=i&lt;=d}.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Hint:
+the standard solution for Acer’s trouble is actually RMQ. However, it is not
+needed for this problem, because it will be guaranteed that all the test data
+are randomly generated. As is manifested in the poem, you can use a stack to
+solve it. Of course, you are also encouraged to learn RMQ (Range Minimum Query)
+if you are interested.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Input</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>The
+first line contains an integer N (1&lt;=N&lt;=100000), which is the length of
+the integer sequence.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>This
+is followed by a line containing N integers, each of which is nonnegative and
+smaller than 100000000.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>The
+line followed contains an integer Q (1&lt;=Q&lt;=100000), which is the number
+of queries.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>This
+is then followed by Q lines, each of which is a query in form of [c, d]
+(without square brackets), 1&lt;=c&lt;=d&lt;=N.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Output</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>For
+each query, you are to output a line containing the minimum integer whose index
+is in the closed interval [c, d].</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Sample
+Input 1</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>7</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>2
+3 4 1 5 2 3</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>4</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>1
+4</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>2
+5</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>6
+7</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>3
+4</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Sample
+Output 1</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>1</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>1</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>2</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>1</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Sample
+Input 2</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>10</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>2
+3 4 1 2 3 8 9 3 4</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>5</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>1
+5</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>2
+3</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>7
+7</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>6
+10</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>5
+7</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'>Sample
+Output 2</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>1</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>3</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>8</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>3</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'>2</span></p>
+
+</div>
+
+</body>
+
+</html>

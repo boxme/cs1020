@@ -1,0 +1,4 @@
+The shortest path is 3 steps:
+(1, 0)
+(1, 1)
+(0, 1)

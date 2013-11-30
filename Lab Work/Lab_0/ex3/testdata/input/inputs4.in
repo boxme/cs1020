@@ -1,0 +1,8 @@
+LIMIT
+6
+ADD 1 -1
+ADD 2 3
+MUL -3 -4
+SUB 6 -7
+SUB 0 12
+SUB 1 3

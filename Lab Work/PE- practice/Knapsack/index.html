@@ -1,0 +1,56 @@
+<html>
+<head></head>
+<body>
+<h1>Knapsack</h1>
+<h2>Objective</h2>
+<p>The objective of this problem is to test the students&rsquo; understanding on <b>Recursion</b>.
+
+<h2>Problem Description</h2>
+<p>You are very lucky to win a free shopping voucher. You quickly grab the catalog of that shop to check what items are sold in that shop. Intuitively, you want to go back home with the best combination of items that you can get. Unfortunately, you do not know the price of each item; what you know is just the weight of all items. 
+<p>You want to list down all possible sets of items that can be put into your limited sack, i.e. the total weight of a set of items should not exceed the capacity of your sack, otherwise your sack will tear down and you will get nothing.
+
+<h2>Input</h2>
+<p>The first line of the input contains 2 integers <b>N</b> (1 <= <b>N</b> <= 25), denoting the number of items in the shop and <b>K</b> (1 <= <b>K</b> <= 100), denoting the capacity of your sack. The next line contains <b>N</b> integers, denoting the weights of all <b>N</b> items. The weight of an item will not exceed 500.
+
+<h2>Output</h2>
+<p>Output the number of different sets of items that can be put in your sack.
+
+<h2>Sample Input 1</h2>
+<pre>5 6
+3 1 6 4 5
+</pre>
+
+<h2>Sample Output 1</h2>
+<pre>9
+</pre>
+
+<h2>Sample Input 2</h2>
+<pre>3 1
+4 3 7
+</pre>
+
+<h2>Sample Output 2</h2>
+<pre>1
+</pre>
+
+<h2>Explanation</h2>
+<p>Test data 1:<br />
+There are 9 different sets of items with total weight not exceed the capacity of your sack.
+<ol>
+<li>{} -> Empty sack -> Total weight = 0.</li>
+<li>{3} -> Total weight = 3.</li>
+<li>{3, 1} -> Total weight = 4.</li>
+<li>{1} -> Total weight = 1.</li>
+<li>{1, 4} -> Total weight = 5.</li>
+<li>{1, 5} -> Total weight = 6.</li>
+<li>{6} -> Total weight = 6.</li>
+<li>{4} -> Total weight = 4.</li>
+<li>{5} -> Total weight = 5.</li>
+</ol>
+<p>Test data 2: Empty sack is the only possible way.
+
+<h2>Notes</h2>
+The main Java class must be called <b>Knapsack</b>, and be in the source file <b>Knapsack</b>.java.
+</body>
+</html>
+

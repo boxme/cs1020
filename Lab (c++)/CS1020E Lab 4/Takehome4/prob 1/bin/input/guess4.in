@@ -1,0 +1,19 @@
+5
+push 10
+push 100
+push 1000
+reverse
+pop 100
+8
+push 10
+push 100
+push 1000
+push 100
+push 10
+pop 10
+pop 100
+pop 1000
+3
+pop 10
+push 10
+reverse

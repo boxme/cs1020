@@ -1,0 +1,13 @@
+5
+1 2 5 0 0
+8 5 3 3 8
+1 5 8 7 0
+2 4 0 6 1
+0 8 5 8 6
+6
+Reflect x
+Rotate 180
+Reflect y
+Reflect y
+Reflect x
+Reflect x
